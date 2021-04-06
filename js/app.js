@@ -382,8 +382,7 @@ let totalSum=0;
       tdElement.textContent = this.randomNumber[i];
       sum += this.randomNumber[i];
     }
-    totalSum
-+=sum;
+    totalSum+=sum;
     let tail = document.createElement('td');
     trElement.appendChild(tail);
     tail.textContent = sum;
