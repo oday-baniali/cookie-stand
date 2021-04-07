@@ -1,21 +1,24 @@
 body{
     
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: rgb(129, 134, 134);
+    background-color: rgb(136, 145, 145);
     }
 
     header h1 {
-        color: rgb(22, 235, 93);
-        text-align: center;
-        font-size: larger;
+        color: rgb(109, 8, 8);
+        text-align: left;
+        font-size: 50px;
         padding: 30px;
         margin: 30px;
     }
     
  
-    table,th,td {
-        border: black 2px;
+    table,tr,th,td {
+        border: solid 3px black;
         border-collapse: collapse;
+        font-family: cursive;
+        
     }
+
 
     
