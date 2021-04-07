@@ -321,6 +321,7 @@ function randomNumber(max, min) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
+
 let parent = document.getElementById('parent');
 let tableElemnts = document.createElement('table');
 parent.appendChild(tableElemnts);
@@ -351,7 +352,7 @@ function storageDetails (place,minimum,maximum,avarage){
     this.maximum=maximum;
     this.avarage=avarage;
     this.randomNumber=[];
-   
+    
     this.getrandomNumber();
     
 
@@ -425,3 +426,49 @@ console.log(totalTotal);
 let final=document.createElement('td');
 trElement.appendChild(final);
 final.textContent=totalTotal
+
+
+
+
+
+
+//  lab 09 -------events and form------------- events and form--------**
+
+
+let form= document.getElementById('form');
+
+console.log('form');
+
+//add the event listner
+
+form.addEventListener('submit',submitter);
+
+// create the submitter function
+
+function submitter(event){
+    event.preventdefault();
+    console.log(event);
+
+    let name=event.target.namefield.value;
+    console.log(name);
+    let minumber=event.target.minRandomField.value;
+    console.log(minumber);
+    let maxinumber=event.target.maxRandomField.value;
+    console.log(maxinumber);
+    let avercookies=event.target.averagecookiesfield.value;
+    console.log(avercookies);
+
+   
+
+    let addedstore=new storageDetails(name,minumber,maxinumber,avercookies); 
+     console.log(addedstore);
+
+     
+
+     addedstore.render();
+
+
+}
+
+     
+
